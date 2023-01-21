@@ -13,8 +13,13 @@ const sketch = ({ context: ctx }: SketchProps) => {
 };
 
 const settings: SketchSettings = {
+  mode: "2d",
   dimensions: [1200, 1200],
   duration: 4_000,
+  // playFps: 30,
+  exportFps: 60,
+  framesFormat: "webm",
+  // attributes: {},
 };
 
 sketchWrapper(sketch as Sketch, settings);
