@@ -16,10 +16,12 @@ const settings: SketchSettings = {
   mode: "2d",
   dimensions: [1200, 1200],
   duration: 4_000,
-  // playFps: 30,
-  exportFps: 60,
-  framesFormat: "webm",
-  // attributes: {},
+  playFps: 30,
+  exportFps: 50,
+  framesFormat: ["gif", "webm"],
+  attributes: {
+    willReadFrequently: true,
+  },
 };
 
 sketchWrapper(sketch as Sketch, settings);
