@@ -15,6 +15,7 @@ const sketch = ({ context: ctx }: SketchProps) => {
 const settings: SketchSettings = {
   mode: "2d",
   dimensions: [1200, 1200],
+  pixelRatio: window.devicePixelRatio,
   duration: 4_000,
   playFps: 30,
   exportFps: 50,

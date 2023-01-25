@@ -1,11 +1,15 @@
 {
   "name": "sketch-wrapper-starter-ts",
-  "version": "0.1.0",
   "description": "Sketch-Wrapper TypeScript starter",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
+    "dev": "vite",
     "start": "vite",
-    "build": "vite build"
+    "prebuild": "license-checker --production",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "author": "",
   "license": "MIT",
@@ -13,6 +17,7 @@
     "@daeinc/sketch-wrapper": "^0.13.1"
   },
   "devDependencies": {
+    "license-checker": "^25.0.1",
     "typescript": "^4.9.4",
     "vite": "^4.0.4"
   }
